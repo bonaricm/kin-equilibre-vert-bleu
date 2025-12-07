@@ -5,14 +5,14 @@ const contactInfo = [
   {
     icon: MapPin,
     label: "Adresse",
-    value: "Lespignan",
-    subvalue: "Bassin Biterrois, Hérault",
+    value: "25ter route de Nissan",
+    subvalue: "34710 Lespignan",
   },
   {
     icon: Phone,
     label: "Téléphone",
-    value: "Sur rendez-vous",
-    subvalue: "Contactez-nous",
+    value: "06 02 41 78 61",
+    subvalue: "Sur rendez-vous",
   },
   {
     icon: Clock,

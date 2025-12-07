@@ -2,56 +2,66 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
 
 @layer base {
   :root {
-    --background: 140 25% 98%;
-    --foreground: 150 30% 15%;
+    /* Palette inspirée de la carte de visite */
+    --background: 175 40% 96%;
+    --foreground: 215 70% 25%;
 
-    --card: 140 20% 99%;
-    --card-foreground: 150 30% 15%;
+    --card: 175 35% 98%;
+    --card-foreground: 215 70% 25%;
 
-    --popover: 140 20% 99%;
-    --popover-foreground: 150 30% 15%;
+    --popover: 175 35% 98%;
+    --popover-foreground: 215 70% 25%;
 
-    --primary: 152 45% 45%;
+    /* Bleu marine du texte */
+    --primary: 215 70% 35%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 145 30% 92%;
-    --secondary-foreground: 150 30% 25%;
+    /* Cyan/turquoise clair */
+    --secondary: 175 50% 90%;
+    --secondary-foreground: 215 70% 25%;
 
-    --muted: 145 20% 94%;
-    --muted-foreground: 150 15% 45%;
+    --muted: 175 35% 92%;
+    --muted-foreground: 215 40% 45%;
 
-    --accent: 158 40% 85%;
-    --accent-foreground: 150 35% 20%;
+    /* Turquoise accent */
+    --accent: 170 60% 75%;
+    --accent-foreground: 215 70% 20%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Rouge/bordeaux de la carte */
+    --destructive: 0 70% 45%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 145 25% 88%;
-    --input: 145 25% 88%;
-    --ring: 152 45% 45%;
+    --border: 175 30% 85%;
+    --input: 175 30% 85%;
+    --ring: 215 70% 35%;
 
     --radius: 0.75rem;
 
-    /* Custom colors */
-    --mint: 155 50% 75%;
-    --sage: 145 35% 55%;
-    --forest: 150 40% 35%;
-    --cream: 60 30% 96%;
+    /* Couleurs personnalisées du logo */
+    --cyan: 175 55% 60%;
+    --cyan-light: 175 50% 80%;
+    --turquoise: 170 65% 45%;
+    --coral: 15 75% 60%;
+    --magenta: 330 70% 50%;
+    --orange: 35 90% 55%;
+    --navy: 215 70% 30%;
+    --red-accent: 0 65% 50%;
     
-    /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(155 50% 92%) 0%, hsl(145 40% 85%) 50%, hsl(150 35% 88%) 100%);
-    --gradient-primary: linear-gradient(135deg, hsl(152 45% 50%) 0%, hsl(145 40% 40%) 100%);
-    --gradient-soft: linear-gradient(180deg, hsl(140 25% 98%) 0%, hsl(145 30% 95%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(140 20% 99%) 0%, hsl(145 25% 96%) 100%);
+    /* Gradients matching business card */
+    --gradient-hero: linear-gradient(135deg, hsl(175 50% 85%) 0%, hsl(170 55% 75%) 50%, hsl(175 45% 80%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(215 70% 40%) 0%, hsl(200 60% 35%) 100%);
+    --gradient-soft: linear-gradient(180deg, hsl(175 40% 96%) 0%, hsl(175 45% 92%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(175 35% 98%) 0%, hsl(175 40% 94%) 100%);
+    --gradient-logo: linear-gradient(180deg, hsl(35 90% 55%) 0%, hsl(15 75% 60%) 30%, hsl(215 70% 45%) 60%, hsl(170 65% 45%) 100%);
     
     /* Shadows */
-    --shadow-soft: 0 4px 20px -2px hsl(150 30% 50% / 0.1);
-    --shadow-medium: 0 8px 30px -4px hsl(150 30% 50% / 0.15);
-    --shadow-glow: 0 0 40px hsl(152 45% 45% / 0.2);
+    --shadow-soft: 0 4px 20px -2px hsl(175 50% 50% / 0.12);
+    --shadow-medium: 0 8px 30px -4px hsl(175 50% 50% / 0.18);
+    --shadow-glow: 0 0 40px hsl(170 65% 45% / 0.25);
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -64,33 +74,33 @@
   }
 
   .dark {
-    --background: 150 25% 8%;
-    --foreground: 145 20% 95%;
+    --background: 215 50% 8%;
+    --foreground: 175 30% 95%;
 
-    --card: 150 25% 10%;
-    --card-foreground: 145 20% 95%;
+    --card: 215 45% 12%;
+    --card-foreground: 175 30% 95%;
 
-    --popover: 150 25% 10%;
-    --popover-foreground: 145 20% 95%;
+    --popover: 215 45% 12%;
+    --popover-foreground: 175 30% 95%;
 
-    --primary: 152 45% 55%;
-    --primary-foreground: 150 30% 10%;
+    --primary: 175 55% 55%;
+    --primary-foreground: 215 70% 10%;
 
-    --secondary: 150 25% 15%;
-    --secondary-foreground: 145 20% 90%;
+    --secondary: 215 40% 18%;
+    --secondary-foreground: 175 30% 90%;
 
-    --muted: 150 20% 18%;
-    --muted-foreground: 145 15% 60%;
+    --muted: 215 35% 20%;
+    --muted-foreground: 175 20% 60%;
 
-    --accent: 155 30% 20%;
-    --accent-foreground: 145 25% 90%;
+    --accent: 170 50% 25%;
+    --accent-foreground: 175 30% 90%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 150 20% 20%;
-    --input: 150 20% 20%;
-    --ring: 152 45% 55%;
+    --border: 215 35% 22%;
+    --input: 215 35% 22%;
+    --ring: 175 55% 55%;
 
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
@@ -148,6 +158,14 @@
   
   .text-balance {
     text-wrap: balance;
+  }
+
+  .text-navy {
+    color: hsl(var(--navy));
+  }
+
+  .text-red-accent {
+    color: hsl(var(--red-accent));
   }
 }
 

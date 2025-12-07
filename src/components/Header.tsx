@@ -20,8 +20,8 @@ const Header = () => {
           {/* Logo */}
           <a href="#accueil" className="flex items-center gap-3 group">
             <BalanceLogo size="sm" className="group-hover:scale-110 transition-transform" />
-            <span className="font-cormorant text-2xl font-semibold text-foreground">
-              Kin'équilibre
+            <span className="font-cormorant text-2xl font-semibold text-primary">
+              Kiné'quilibre
             </span>
           </a>
 
