@@ -11,7 +11,7 @@ const contactInfo = [
   {
     icon: Phone,
     label: "Téléphone",
-    value: "06 02 41 78 61",
+    value: "07.81.98.24.87",
     subvalue: "Sur rendez-vous",
   },
   {
