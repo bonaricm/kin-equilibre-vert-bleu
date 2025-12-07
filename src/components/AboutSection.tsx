@@ -1,10 +1,12 @@
 import { Check } from "lucide-react";
+import BalanceLogo from "./BalanceLogo";
 
 const features = [
   "Diplômée en kinésithérapie vestibulaire",
-  "Approche douce et personnalisée",
-  "Cabinet moderne et accessible",
-  "Prise en charge des vertiges et troubles de l'équilibre",
+  "Kiné du sport & Préparatrice physique",
+  "Cabinet équipé Réalité Virtuelle Équilibre",
+  "Matériel innovant et ludique",
+  "Approche personnalisée et bienveillante",
 ];
 
 const AboutSection = () => {
@@ -26,7 +28,7 @@ const AboutSection = () => {
                     cx="200"
                     cy="250"
                     r="150"
-                    stroke="hsl(152, 45%, 45%)"
+                    stroke="hsl(170, 65%, 45%)"
                     strokeWidth="1"
                     opacity="0.3"
                   />
@@ -34,7 +36,7 @@ const AboutSection = () => {
                     cx="200"
                     cy="250"
                     r="100"
-                    stroke="hsl(152, 45%, 45%)"
+                    stroke="hsl(170, 65%, 45%)"
                     strokeWidth="1"
                     opacity="0.4"
                   />
@@ -42,7 +44,7 @@ const AboutSection = () => {
                     cx="200"
                     cy="250"
                     r="50"
-                    stroke="hsl(152, 45%, 45%)"
+                    stroke="hsl(170, 65%, 45%)"
                     strokeWidth="1"
                     opacity="0.5"
                   />
@@ -52,16 +54,15 @@ const AboutSection = () => {
               {/* Content overlay */}
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center p-8">
-                  <div className="w-24 h-24 rounded-full gradient-primary mx-auto mb-6 flex items-center justify-center shadow-glow">
-                    <span className="text-4xl font-cormorant text-primary-foreground font-semibold">
-                      K
-                    </span>
-                  </div>
-                  <p className="font-cormorant text-2xl text-foreground font-medium">
-                    Kinésithérapeute
+                  <BalanceLogo size="lg" className="mx-auto mb-6" />
+                  <p className="font-cormorant text-2xl text-primary font-semibold">
+                    Mélanie ENSENAT BONARIC
                   </p>
-                  <p className="text-muted-foreground mt-2">
-                    Spécialiste vestibulaire
+                  <p className="text-red-accent mt-2 font-medium">
+                    Masseur-Kinésithérapeute DE
+                  </p>
+                  <p className="text-muted-foreground mt-1 text-sm">
+                    Kiné Vestibulaire · Kiné du sport
                   </p>
                 </div>
               </div>
@@ -70,8 +71,9 @@ const AboutSection = () => {
             {/* Floating badge */}
             <div className="absolute -bottom-6 -right-6 bg-card p-4 rounded-2xl shadow-medium border border-border/50">
               <p className="text-sm text-muted-foreground">Localisation</p>
-              <p className="font-semibold text-foreground">Lespignan</p>
-              <p className="text-xs text-primary">Bassin Biterrois</p>
+              <p className="font-semibold text-foreground">25ter route de Nissan</p>
+              <p className="text-sm text-foreground">34710 Lespignan</p>
+              <p className="text-xs text-primary mt-1">Bassin Biterrois</p>
             </div>
           </div>
 
@@ -79,20 +81,19 @@ const AboutSection = () => {
           <div>
             <h2 className="font-cormorant text-4xl md:text-5xl font-semibold text-foreground mb-6">
               À propos de
-              <span className="text-primary"> Kin'équilibre</span>
+              <span className="text-primary"> Kiné'quilibre</span>
             </h2>
             
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              Située à Lespignan, au cœur du bassin biterrois, Kin'équilibre 
+              Située à Lespignan, au cœur du bassin biterrois, Kiné'quilibre 
               vous propose une prise en charge spécialisée des troubles 
               vestibulaires et de l'équilibre.
             </p>
             
             <p className="text-muted-foreground mb-8 leading-relaxed">
-              Notre approche combine expertise technique et accompagnement 
-              bienveillant pour vous aider à retrouver une vie quotidienne 
-              sans vertige ni instabilité. Chaque patient bénéficie d'un 
-              programme de rééducation adapté à ses besoins spécifiques.
+              Notre cabinet est équipé de technologies de pointe en réalité virtuelle
+              pour une rééducation innovante et ludique. Chaque patient bénéficie d'un 
+              programme personnalisé adapté à ses besoins spécifiques.
             </p>
 
             {/* Features list */}

@@ -10,9 +10,9 @@ const HeroSection = () => {
     >
       {/* Decorative elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 left-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-sage/10 rounded-full blur-3xl" />
-        <div className="absolute top-1/2 left-1/4 w-32 h-32 bg-mint/20 rounded-full blur-2xl" />
+        <div className="absolute top-20 left-10 w-64 h-64 bg-cyan/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-turquoise/10 rounded-full blur-3xl" />
+        <div className="absolute top-1/2 left-1/4 w-32 h-32 bg-cyan-light/20 rounded-full blur-2xl" />
       </div>
 
       <div className="container mx-auto px-4 pt-20">
@@ -24,28 +24,47 @@ const HeroSection = () => {
 
           {/* Titre principal */}
           <h1
-            className="font-cormorant text-5xl md:text-7xl lg:text-8xl font-semibold text-foreground mb-6 animate-fade-up text-balance"
+            className="font-cormorant text-5xl md:text-7xl lg:text-8xl font-bold text-primary mb-6 animate-fade-up text-balance"
             style={{ animationDelay: "0.2s" }}
           >
-            Kin'équilibre
+            Kiné'quilibre
           </h1>
 
           {/* Sous-titre */}
           <p
-            className="text-xl md:text-2xl text-muted-foreground mb-4 animate-fade-up font-light"
+            className="text-xl md:text-2xl text-red-accent mb-2 animate-fade-up font-semibold"
             style={{ animationDelay: "0.3s" }}
           >
-            Kinésithérapie Vestibulaire
+            Mélanie ENSENAT BONARIC
+          </p>
+
+          <p
+            className="text-lg md:text-xl text-muted-foreground mb-4 animate-fade-up"
+            style={{ animationDelay: "0.35s" }}
+          >
+            Masseur-Kinésithérapeute DE
           </p>
 
           {/* Description */}
           <p
-            className="text-lg text-muted-foreground/80 mb-10 max-w-2xl mx-auto animate-fade-up"
+            className="text-lg text-red-accent font-medium mb-10 max-w-2xl mx-auto animate-fade-up"
             style={{ animationDelay: "0.4s" }}
           >
-            Retrouvez votre équilibre au cœur du bassin biterrois. 
-            Soins spécialisés pour les troubles vestibulaires à Lespignan.
+            Rééducation Vestibulaire · Kiné du sport
           </p>
+
+          {/* Features */}
+          <div
+            className="flex flex-wrap justify-center gap-4 mb-10 animate-fade-up"
+            style={{ animationDelay: "0.45s" }}
+          >
+            <span className="px-4 py-2 bg-card/80 rounded-full text-sm text-foreground border border-border/50 shadow-soft">
+              Cabinet équipé Réalité Virtuelle
+            </span>
+            <span className="px-4 py-2 bg-card/80 rounded-full text-sm text-foreground border border-border/50 shadow-soft">
+              Matériel innovant & ludique
+            </span>
+          </div>
 
           {/* CTA Buttons */}
           <div
