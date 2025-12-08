@@ -23,7 +23,7 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "contact@kinequilibre.fr",
+    value: "kinequilibre34@outlook.fr",
     subvalue: "Réponse sous 24h",
   },
 ];
