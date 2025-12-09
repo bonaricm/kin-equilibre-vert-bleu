@@ -70,7 +70,12 @@ const ContactSection = () => {
             <h3 className="font-cormorant text-2xl font-semibold text-foreground mb-6">
               Demande de rendez-vous
             </h3>
-            <form className="space-y-5">
+            <form 
+              className="space-y-5"
+              action="mailto:kinequilibre34@outlook.fr"
+              method="POST"
+              encType="text/plain"
+            >
               <div className="grid sm:grid-cols-2 gap-5">
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-2">
@@ -78,6 +83,7 @@ const ContactSection = () => {
                   </label>
                   <input
                     type="text"
+                    name="Prénom"
                     className="w-full px-4 py-3 rounded-xl border border-border bg-background/50 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
                     placeholder="Votre prénom"
                   />
@@ -88,6 +94,7 @@ const ContactSection = () => {
                   </label>
                   <input
                     type="text"
+                    name="Nom"
                     className="w-full px-4 py-3 rounded-xl border border-border bg-background/50 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
                     placeholder="Votre nom"
                   />
@@ -100,6 +107,7 @@ const ContactSection = () => {
                 </label>
                 <input
                   type="tel"
+                  name="Téléphone"
                   className="w-full px-4 py-3 rounded-xl border border-border bg-background/50 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
                   placeholder="06 00 00 00 00"
                 />
@@ -110,13 +118,14 @@ const ContactSection = () => {
                   Message
                 </label>
                 <textarea
+                  name="Message"
                   rows={4}
                   className="w-full px-4 py-3 rounded-xl border border-border bg-background/50 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all resize-none"
                   placeholder="Décrivez brièvement votre motif de consultation..."
                 />
               </div>
               
-              <Button variant="hero" size="lg" className="w-full">
+              <Button type="submit" variant="hero" size="lg" className="w-full">
                 Envoyer ma demande
               </Button>
             </form>

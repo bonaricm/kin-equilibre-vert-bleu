@@ -10,7 +10,6 @@ const Header = () => {
     { href: "#accueil", label: "Accueil" },
     { href: "#services", label: "Services" },
     { href: "#apropos", label: "À propos" },
-    { href: "#contact", label: "Contact" },
   ];
 
   return (
@@ -36,8 +35,8 @@ const Header = () => {
                 {link.label}
               </a>
             ))}
-            <Button variant="hero" size="sm">
-              Prendre RDV
+            <Button variant="hero" size="sm" asChild>
+              <a href="#contact">Prendre RDV</a>
             </Button>
           </nav>
 
@@ -65,8 +64,8 @@ const Header = () => {
                   {link.label}
                 </a>
               ))}
-              <Button variant="hero" className="mt-2">
-                Prendre RDV
+              <Button variant="hero" className="mt-2" asChild>
+                <a href="#contact">Prendre RDV</a>
               </Button>
             </div>
           </nav>
