@@ -1,6 +1,6 @@
 import { MapPin, Phone, Clock, Mail } from "lucide-react";
 import { Button } from "./ui/button";
-
+import { useState } from "react";
 const contactInfo = [
   {
     icon: MapPin,
@@ -29,6 +29,24 @@ const contactInfo = [
 ];
 
 const ContactSection = () => {
+  const [formData, setFormData] = useState({
+    prenom: "",
+    nom: "",
+    telephone: "",
+    message: "",
+  });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    const subject = encodeURIComponent(`Demande de RDV - ${formData.prenom} ${formData.nom}`);
+    const body = encodeURIComponent(
+      `Prénom: ${formData.prenom}\nNom: ${formData.nom}\nTéléphone: ${formData.telephone}\n\nMessage:\n${formData.message}`
+    );
+    
+    window.location.href = `mailto:kinequilibre34@outlook.fr?subject=${subject}&body=${body}`;
+  };
+
   return (
     <section id="contact" className="py-24 gradient-soft">
       <div className="container mx-auto px-4">
@@ -70,12 +88,7 @@ const ContactSection = () => {
             <h3 className="font-cormorant text-2xl font-semibold text-foreground mb-6">
               Demande de rendez-vous
             </h3>
-            <form 
-              className="space-y-5"
-              action="mailto:kinequilibre34@outlook.fr"
-              method="POST"
-              encType="text/plain"
-            >
+            <form className="space-y-5" onSubmit={handleSubmit}>
               <div className="grid sm:grid-cols-2 gap-5">
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-2">
@@ -83,9 +96,11 @@ const ContactSection = () => {
                   </label>
                   <input
                     type="text"
-                    name="Prénom"
+                    value={formData.prenom}
+                    onChange={(e) => setFormData({ ...formData, prenom: e.target.value })}
                     className="w-full px-4 py-3 rounded-xl border border-border bg-background/50 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
                     placeholder="Votre prénom"
+                    required
                   />
                 </div>
                 <div>
@@ -94,9 +109,11 @@ const ContactSection = () => {
                   </label>
                   <input
                     type="text"
-                    name="Nom"
+                    value={formData.nom}
+                    onChange={(e) => setFormData({ ...formData, nom: e.target.value })}
                     className="w-full px-4 py-3 rounded-xl border border-border bg-background/50 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
                     placeholder="Votre nom"
+                    required
                   />
                 </div>
               </div>
@@ -107,9 +124,11 @@ const ContactSection = () => {
                 </label>
                 <input
                   type="tel"
-                  name="Téléphone"
+                  value={formData.telephone}
+                  onChange={(e) => setFormData({ ...formData, telephone: e.target.value })}
                   className="w-full px-4 py-3 rounded-xl border border-border bg-background/50 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
                   placeholder="06 00 00 00 00"
+                  required
                 />
               </div>
               
@@ -118,10 +137,12 @@ const ContactSection = () => {
                   Message
                 </label>
                 <textarea
-                  name="Message"
+                  value={formData.message}
+                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   rows={4}
                   className="w-full px-4 py-3 rounded-xl border border-border bg-background/50 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all resize-none"
                   placeholder="Décrivez brièvement votre motif de consultation..."
+                  required
                 />
               </div>
               
