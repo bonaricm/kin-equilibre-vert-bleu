@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import logoImage from "@/assets/logo-kinequilibre.jpg";
+import logoImage from "@/assets/logo-kinequilibre.png";
 
 interface BalanceLogoProps {
   className?: string;
@@ -9,9 +9,9 @@ interface BalanceLogoProps {
 
 const BalanceLogo = ({ className, size = "md", useImage = true }: BalanceLogoProps) => {
   const sizeClasses = {
-    sm: "w-12 h-12",
-    md: "w-20 h-20",
-    lg: "w-32 h-32",
+    sm: "w-16 h-16",
+    md: "w-28 h-28",
+    lg: "w-44 h-44",
   };
 
   if (useImage) {
