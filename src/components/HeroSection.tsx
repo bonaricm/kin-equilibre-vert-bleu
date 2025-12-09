@@ -66,18 +66,6 @@ const HeroSection = () => {
             </span>
           </div>
 
-          {/* CTA Buttons */}
-          <div
-            className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up"
-            style={{ animationDelay: "0.5s" }}
-          >
-            <Button variant="hero" size="lg">
-              Prendre rendez-vous
-            </Button>
-            <Button variant="outline" size="lg">
-              En savoir plus
-            </Button>
-          </div>
 
           {/* Scroll indicator */}
           <div
