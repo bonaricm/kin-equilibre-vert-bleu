@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://kinrquilibre.netlify.app/sitemap.xml
+Sitemap: https://kinequilibre.netlify.app/sitemap.xml
