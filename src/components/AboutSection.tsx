@@ -56,7 +56,7 @@ const AboutSection = () => {
               vestibulaires et de l'équilibre.
             </p>
             
-            <p className="text-muted-foreground mb-8 leading-relaxed text-justify bg-primary">Notre cabinet est équipé de technologies de pointe, tant pour l'évaluation et le suivi: 
+            <p className="text-muted-foreground mb-8 leading-relaxed text-justify bg-muted">Notre cabinet est équipé de technologies de pointe, tant pour l'évaluation et le suivi: 
  - VNG, VHIT, ... 
   que pour la rééducation.en réalité virtuelle pour une rééducation innovante et ludique. Chaque patient bénéficie d'un programme personnalisé adapté à ses besoins spécifiques.</p>
 
