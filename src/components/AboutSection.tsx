@@ -1,17 +1,8 @@
 import { Check } from "lucide-react";
 import BalanceLogo from "./BalanceLogo";
-
-const features = [
-  "Diplômée en kinésithérapie vestibulaire",
-  "Kiné du sport & Préparatrice physique",
-  "Cabinet équipé Réalité Virtuelle Équilibre",
-  "Matériel innovant et ludique",
-  "Approche personnalisée et bienveillante",
-];
-
+const features = ["Diplômée en kinésithérapie vestibulaire", "Kiné du sport & Préparatrice physique", "Cabinet équipé Réalité Virtuelle Équilibre", "Matériel innovant et ludique", "Approche personnalisée et bienveillante"];
 const AboutSection = () => {
-  return (
-    <section id="apropos" className="py-24 bg-background">
+  return <section id="apropos" className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Image/Visual Side */}
@@ -19,35 +10,10 @@ const AboutSection = () => {
             <div className="aspect-[4/5] rounded-3xl gradient-hero overflow-hidden shadow-medium relative">
               {/* Decorative pattern */}
               <div className="absolute inset-0 opacity-30">
-                <svg
-                  className="w-full h-full"
-                  viewBox="0 0 400 500"
-                  fill="none"
-                >
-                  <circle
-                    cx="200"
-                    cy="250"
-                    r="150"
-                    stroke="hsl(170, 65%, 45%)"
-                    strokeWidth="1"
-                    opacity="0.3"
-                  />
-                  <circle
-                    cx="200"
-                    cy="250"
-                    r="100"
-                    stroke="hsl(170, 65%, 45%)"
-                    strokeWidth="1"
-                    opacity="0.4"
-                  />
-                  <circle
-                    cx="200"
-                    cy="250"
-                    r="50"
-                    stroke="hsl(170, 65%, 45%)"
-                    strokeWidth="1"
-                    opacity="0.5"
-                  />
+                <svg className="w-full h-full" viewBox="0 0 400 500" fill="none">
+                  <circle cx="200" cy="250" r="150" stroke="hsl(170, 65%, 45%)" strokeWidth="1" opacity="0.3" />
+                  <circle cx="200" cy="250" r="100" stroke="hsl(170, 65%, 45%)" strokeWidth="1" opacity="0.4" />
+                  <circle cx="200" cy="250" r="50" stroke="hsl(170, 65%, 45%)" strokeWidth="1" opacity="0.5" />
                 </svg>
               </div>
               
@@ -90,28 +56,22 @@ const AboutSection = () => {
               vestibulaires et de l'équilibre.
             </p>
             
-            <p className="text-muted-foreground mb-8 leading-relaxed">
-              Notre cabinet est équipé de technologies de pointe en réalité virtuelle
-              pour une rééducation innovante et ludique. Chaque patient bénéficie d'un 
-              programme personnalisé adapté à ses besoins spécifiques.
-            </p>
+            <p className="text-muted-foreground mb-8 leading-relaxed text-justify bg-primary">Notre cabinet est équipé de technologies de pointe, tant pour l'évaluation et le suivi: 
+ - VNG, VHIT, ... 
+  que pour la rééducation.en réalité virtuelle pour une rééducation innovante et ludique. Chaque patient bénéficie d'un programme personnalisé adapté à ses besoins spécifiques.</p>
 
             {/* Features list */}
             <ul className="space-y-4">
-              {features.map((feature) => (
-                <li key={feature} className="flex items-center gap-3">
+              {features.map(feature => <li key={feature} className="flex items-center gap-3">
                   <div className="w-6 h-6 rounded-full gradient-primary flex items-center justify-center flex-shrink-0">
                     <Check className="w-4 h-4 text-primary-foreground" />
                   </div>
                   <span className="text-foreground">{feature}</span>
-                </li>
-              ))}
+                </li>)}
             </ul>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AboutSection;
