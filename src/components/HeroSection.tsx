@@ -47,10 +47,18 @@ const HeroSection = () => {
 
           {/* Description */}
           <p
-            className="text-lg text-red-accent font-medium mb-10 max-w-2xl mx-auto animate-fade-up"
+            className="text-lg text-red-accent font-medium mb-4 max-w-2xl mx-auto animate-fade-up"
             style={{ animationDelay: "0.4s" }}
           >
             Rééducation Vestibulaire · Kiné du sport
+          </p>
+
+          {/* Matériel */}
+          <p
+            className="text-2xl md:text-3xl text-cyan font-bold mb-10 max-w-2xl mx-auto animate-fade-up tracking-wide"
+            style={{ animationDelay: "0.45s" }}
+          >
+            MATÉRIEL D'ÉVALUATION ET SUIVI COMPLET
           </p>
 
           {/* Features */}
