@@ -27,10 +27,21 @@ const HeroSection = () => {
           </div>
 
           {/* Titre principal */}
-          <h1 className="font-cormorant text-5xl md:text-7xl lg:text-8xl font-bold text-primary mb-6 animate-fade-up text-balance" style={{
+          <h1 className="font-cormorant text-5xl md:text-7xl lg:text-8xl font-bold text-primary mb-6 text-balance flex justify-center flex-wrap" style={{
           animationDelay: "0.2s"
         }}>
-            Kiné'quilibre
+            {title.split("").map((char, i) => (
+              <span
+                key={i}
+                className={animate ? "inline-block animate-flag-wave" : "inline-block opacity-0"}
+                style={{
+                  animationDelay: `${i * 0.07}s`,
+                  whiteSpace: char === " " ? "pre" : undefined,
+                }}
+              >
+                {char}
+              </span>
+            ))}
           </h1>
 
           {/* Sous-titre */}
