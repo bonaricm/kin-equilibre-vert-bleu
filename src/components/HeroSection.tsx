@@ -1,7 +1,14 @@
+import { useEffect, useState } from "react";
 import BalanceLogo from "./BalanceLogo";
 import { Button } from "./ui/button";
 import { ArrowDown } from "lucide-react";
 const HeroSection = () => {
+  const title = "Kiné'quilibre";
+  const [animate, setAnimate] = useState(false);
+  useEffect(() => {
+    const timer = setTimeout(() => setAnimate(true), 400);
+    return () => clearTimeout(timer);
+  }, []);
   return <section id="accueil" className="min-h-screen gradient-hero flex items-center justify-center relative overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
