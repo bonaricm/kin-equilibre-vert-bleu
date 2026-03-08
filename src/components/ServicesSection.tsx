@@ -1,29 +1,41 @@
-import { Ear, Brain, Activity, Heart } from "lucide-react";
+import { Ear, Brain, Activity, Heart, Gamepad2, Dumbbell } from "lucide-react";
 
 const services = [
   {
     icon: Ear,
     title: "Rééducation Vestibulaire",
     description:
-      "Traitement spécialisé des vertiges et troubles de l'équilibre d'origine vestibulaire.",
+      "Traitement spécialisé des vertiges positionnels (VPPB), maladie de Menière, névrite vestibulaire et troubles de l'équilibre d'origine vestibulaire.",
   },
   {
     icon: Brain,
-    title: "Bilan Vestibulaire",
+    title: "Bilan Vestibulaire Complet",
     description:
-      "Évaluation complète de votre système vestibulaire pour un diagnostic précis.",
+      "Évaluation précise avec matériel professionnel : vidéonystagmographie (VNG), video Head Impulse Test (VHIT) pour un diagnostic fiable.",
+  },
+  {
+    icon: Gamepad2,
+    title: "Réalité Virtuelle",
+    description:
+      "Rééducation innovante et ludique par réalité virtuelle pour traiter les vertiges et améliorer l'équilibre au quotidien.",
   },
   {
     icon: Activity,
     title: "Exercices d'Équilibre",
     description:
-      "Programmes personnalisés pour améliorer votre stabilité au quotidien.",
+      "Programmes personnalisés de rééducation de l'équilibre adaptés à chaque patient, du sportif à la personne âgée.",
+  },
+  {
+    icon: Dumbbell,
+    title: "Kiné du Sport",
+    description:
+      "Kinésithérapie du sport et préparation physique pour sportifs amateurs et professionnels dans le Bassin Biterrois.",
   },
   {
     icon: Heart,
     title: "Suivi Personnalisé",
     description:
-      "Accompagnement adapté à votre rythme et vos besoins spécifiques.",
+      "Accompagnement bienveillant adapté à votre rythme. Prise en charge à Lespignan, près de Béziers, Colombiers et Nissan-lez-Ensérune.",
   },
 ];
 
@@ -34,16 +46,16 @@ const ServicesSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="font-cormorant text-4xl md:text-5xl font-semibold text-foreground mb-4">
-            Nos Services
+            Nos Services de Kinésithérapie
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-            Une approche spécialisée pour traiter les troubles de l'équilibre
-            et vous accompagner vers une vie plus sereine.
+            Cabinet de kinésithérapie spécialisé en rééducation vestibulaire à Lespignan.
+            Traitement des vertiges, troubles de l'équilibre et kiné du sport près de Béziers.
           </p>
         </div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <div
               key={service.title}
