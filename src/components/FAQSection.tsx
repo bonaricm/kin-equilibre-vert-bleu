@@ -29,7 +29,7 @@ const faqs = [
   {
     question: "Quels types de vertiges traitez-vous ?",
     answer:
-      "Nous traitons tous les types de vertiges : vertiges positionnels paroxystiques bénins (VPPB), vertiges liés à la maladie de Menière, névrite vestibulaire, instabilité chronique, vertiges post-traumatiques et troubles de l'équilibre chez la personne âgée.",
+      "Nous traitons tous les types de vertiges : vertiges positionnels paroxystiques bénins (VPPB), vertiges liés à la maladie de Menière, névrite vestibulaire, migraines vestibulaires, syndrome de l'autoroute, instabilité chronique, vertiges post-traumatiques et troubles de l'équilibre chez la personne âgée.",
   },
   {
     question: "Qu'est-ce que la rééducation en réalité virtuelle ?",
