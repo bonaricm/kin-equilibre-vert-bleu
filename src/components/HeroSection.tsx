@@ -7,7 +7,11 @@ const HeroSection = () => {
   const [animate, setAnimate] = useState(false);
   useEffect(() => {
     const timer = setTimeout(() => setAnimate(true), 400);
-    return () => clearTimeout(timer);
+    const interval = setInterval(() => {
+      setAnimate(false);
+      setTimeout(() => setAnimate(true), 50);
+    }, 5000);
+    return () => { clearTimeout(timer); clearInterval(interval); };
   }, []);
   return <section id="accueil" className="min-h-screen gradient-hero flex items-center justify-center relative overflow-hidden">
       {/* Decorative elements */}
