@@ -16,7 +16,7 @@ const HeroSection = () => {
           <div className="mb-8 animate-fade-up" style={{
           animationDelay: "0.1s"
         }}>
-            <BalanceLogo size="lg" className="mx-auto" />
+            <BalanceLogo size="lg" className="mx-auto animate-spin-slow" />
           </div>
 
           {/* Titre principal */}
