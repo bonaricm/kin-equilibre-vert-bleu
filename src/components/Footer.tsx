@@ -2,7 +2,7 @@ import { Star } from "lucide-react";
 import BalanceLogo from "./BalanceLogo";
 
 const Footer = () => {
-  const googleReviewUrl = "https://search.google.com/local/writereview?kgs=9f2c72be86812c7e";
+  const googleReviewUrl = "https://g.page/r/CTR4A-av2duaEAE/review";
   return <footer className="bg-primary text-primary-foreground py-12">
       <div className="container mx-auto px-4">
         {/* Google Reviews Card */}
